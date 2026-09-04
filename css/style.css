@@ -1,0 +1,13 @@
+*{
+    box-sixing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.navegacionvertical {
+    text-emphasis: none;
+}
+.navegacionhorizontal {
+    text-emphasis: none;
+}
