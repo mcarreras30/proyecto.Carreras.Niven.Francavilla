@@ -106,3 +106,17 @@ main h1 {
 .logo {
     border-radius: 70px;
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #a9c4de;
+    height: 50px;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 15px;
+}
+.integrantes {
+    margin: 0px;}
