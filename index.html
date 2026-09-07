@@ -7,46 +7,55 @@
 </head>
 <body>
     <header>
-        <img src="./img/logo.jpeg" alt="logo de la tienda">
-        <h1>Nexo</h1>
-        <h3><a href="./index.html">HOME</a></h3>
-        <h3><a href="./login.html">Inicia sesión acá</a></h3>
-        <h3><a href="./register.html">Registrate acá</a></h3>
-        <h3>Búsqueda</h3>
+        <a href="./index.html">
+        <img class="logo" src="./img/logo.jpeg" alt="logo de la tienda">
+        </a>
+      
+        <div class="buscador">
+            <h3>Búsqueda</h3>
+        </div>
+        <nav class="registro" >
+        <a  href="./index.html">HOME</a>
+        <a  href="./login.html">Inicia sesión </a>
+        <a href="./register.html">Registrate</a>
+        </nav>
     </header>
-    <div class="contenido">
-    <div class="navegacionvertical">
+    
+    
+     <main class="contenido">
+        <aside class="catalogo">
         <h2>Categorías</h2>
         <ul>
-            <li><a href="./category.html">Beauty</a></li>
-            <li><a href="./category.html">Fragrances</a></li>
-            <li><a href="./category.html">Furniture</a></li>
-            <li><a href="./category.html">Groceries</a></li>
-            <li><a href="./category.html">Home decoration</a></li>
-            <li><a href="./category.html">Kitchen accessories</a></li>
-            <li><a href="./category.html">Laptops</a></li>
-            <li><a href="./category.html">Mens shirts</a></li>
-            <li><a href="./category.html">Mens shoes</a></li>
-            <li><a href="./category.html">Mens watches</a></li>
-            <li><a href="./category.html">Mobile accessories</a></li>
-            <li><a href="./category.html">Motorcycle</a></li>
-            <li><a href="./category.html">Skin care</a></li>
-            <li><a href="./category.html">Smartphones</a></li>
-            <li><a href="./category.html">Sport accessories</a></li>
-            <li><a href="./category.html">Sunglases</a></li>
-            <li><a href="./category.html">Tablets</a></li>
-            <li><a href="./category.html">Tops</a></li>
-            <li><a href="./category.html">Vehicle</a></li>
-            <li><a href="./category.html">Women bags</a></li>
-            <li><a href="./category.html">Womens dresses</a></li>
-            <li><a href="./category.html">Womens jewellery</a></li>
-            <li><a href="./category.html">Womens shoes</a></li>
-            <li><a href="./category.html">Women watches</a></li>
+            <li><a class="categorias" href="./category.html">Beauty</a></li>
+            <li><a class="categorias" href="./category.html">Fragrances</a></li>
+            <li><a class="categorias" href="./category.html">Furniture</a></li>
+            <li><a class="categorias" href="./category.html">Groceries</a></li>
+            <li><a class="categorias" href="./category.html">Home decoration</a></li>
+            <li><a class="categorias" href="./category.html">Kitchen accessories</a></li>
+            <li><a class="categorias" href="./category.html">Laptops</a></li>
+            <li><a class="categorias" href="./category.html">Mens shirts</a></li>
+            <li><a class="categorias" href="./category.html">Mens shoes</a></li>
+            <li><a class="categorias" href="./category.html">Mens watches</a></li>
+            <li><a class="categorias" href="./category.html">Mobile accessories</a></li>
+            <li><a class="categorias" href="./category.html">Motorcycle</a></li>
+            <li><a class="categorias" href="./category.html">Skin care</a></li>
+            <li><a class="categorias" href="./category.html">Smartphones</a></li>
+            <li><a class="categorias" href="./category.html">Sport accessories</a></li>
+            <li><a class="categorias" href="./category.html">Sunglases</a></li>
+            <li><a class="categorias" href="./category.html">Tablets</a></li>
+            <li><a class="categorias" href="./category.html">Tops</a></li>
+            <li><a class="categorias" href="./category.html">Vehicle</a></li>
+            <li><a class="categorias" href="./category.html">Women bags</a></li>
+            <li><a class="categorias" href="./category.html">Womens dresses</a></li>
+            <li><a class="categorias" href="./category.html">Womens jewellery</a></li>
+            <li><a class="categorias" href="./category.html">Womens shoes</a></li>
+            <li><a class="categorias" href="./category.html">Women watches</a></li>
         </ul>
-    </div>
-    <main>
-    <section class="productos">
-        <h1>Más vendidos</h1>
+   
+    </aside>
+    <section>
+    <section class="productos-masvendidos">
+        <h1>MAS VENDIDOS</h1>
         <article>
             <img class="imagenes" src="img/lumea.jpg" alt="Luméa">
             <h2>LUMÊA</h2>
@@ -116,9 +125,10 @@
             <h3>$62.000</h3>
             <p>Dulce e intenso, con cereza, ciruela, cainilla y pachulí. Pensado para una fragancia nocturna y sensual.</p>
             <a href="./product.html" class="detalle">Ver detalle</a>
-        </section>
-    <section class="productos">
-        <h1>Recomendados para vos</h1>
+       </section>
+        <section class="productos-recomendados">
+
+        <h1>RECOMENDADOS PARA VOS</h1>
         <article>
             <img class="imagenes" src="./img/eclatnocturne.jpg" alt="Eclat nocturne">
             <h2>ECLAT NOCTURNE</h2>
@@ -129,7 +139,7 @@
          <article>
             <img class="imagenes" src="./img/velours.avif" alt="Velours">
             <h2>VELOURS</h2>
-            <h3>$94.900
+            <h3>$94.900</h3>
             <p>Suave y envolvente, combina rosa aterciopelada, almizcle blanco y ámbar dorado. Una esencia delicada con un fondo sensual.</p>
             <a href="./product.html" class="detalle"> Ver detalle</a>
 
@@ -198,8 +208,9 @@
             <a href="./product.html" class="detalle"> Ver detalle</a>
         </article>
     </section>
+    </section>
     </main>
-    </div>
+   
     
 </body>
 </html>
