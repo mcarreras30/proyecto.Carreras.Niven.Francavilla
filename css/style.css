@@ -90,6 +90,7 @@ main h1 {
     display: flex;
     width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .detalle {
     text-decoration: none;
@@ -98,13 +99,46 @@ main h1 {
     background-color: #a9c4de;
     
 }
-.categorias{
+.categorias {
     border-bottom: 1px solid gray;
     margin: 10px 0px;
     color: black;
 }
 .logo {
     border-radius: 70px;
+}
+.detalle-producto {
+    display: flex;
+    width: 750px;
+    gap: 30px;
+    align-items: center;
+}
+.detalle-producto div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.reviews {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 10px
+}
+.reviews article {
+    width: 30%;
+    background-color: #997c5f;
+    border: solid 1px #000000;
+}
+.reviews h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.imagen-detalle {
+    margin-top: 25px;
+    width: 450px;
+    height: 525px;
 }
 footer{
     display: flex;
@@ -119,4 +153,5 @@ footer{
     padding: 15px;
 }
 .integrantes {
-    margin: 0px;}
+    margin: 0px;
+}
