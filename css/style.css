@@ -142,6 +142,17 @@ main h1 {
     width: 450px;
     height: 525px;
 }
+.productos-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.productos-categoria h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
 footer{
     display: flex;
     align-items: center;
