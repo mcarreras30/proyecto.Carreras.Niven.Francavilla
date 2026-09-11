@@ -6,7 +6,54 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-  
-    
+    <header>
+        <a href="./index.html">
+        <img class="logo" src="./img/logo.jpeg" alt="logo de la tienda">
+        </a>
+      
+        <div class="buscador">
+            <h3>Búsqueda</h3>
+        </div>
+        <nav class="registro" >
+        <a  href="./index.html">HOME</a>
+        <a  href="./login.html">INICIA SESION </a>
+        <a href="./register.html">REGISTRATE</a>
+        </nav>
+    </header>
+    <main class="mainregister">
+        <h1 class="tituloregistro">Registrate:</h1>
+        <section class="section-register">
+            <form action="./index.html" method="get">
+                <div class="div-register textoregistro">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="Email" value="" required>
+                </div>
+                <div class="div-register textoregistro">
+                    <label for="contraseña">Contraseña:</label>
+                    <input id="contraseña" type="password" name="contraseña" value="">
+                </div>
+                <div class="div-register textoregistro">
+                    <label for="repetircontraseña">Repetir contraseña:</label>
+                    <input id="repetircontraseña" type="password" name="contraseña" value="">
+                </div>
+                <div class="div-register textoregistro">
+                    <input type="checkbox" name="terminosycondiciones" value="terminosycondiciones">
+                    <label for="terminosycondiciones">Acepto terminos y condiciones</label>     
+                </div>
+                <div class="div-register">
+                    <button type="submit" class="botonregistrarme">Registrarme</button>
+                </div>
+                <div>
+                    <p>Ya tenes cuenta?</p><a href="./login.html">Inicia sesion acá</a>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer class="footerregister">
+        <p class="integrantes">Ambar Niven</p>
+        <p class="integrantes">Margarita Carreras</p>
+        <p class="integrantes">Micaela Francavilla</p>
+    </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@ header {
 }
 header a {
     text-decoration: none;
-    color: #f8f5f0;
+    color: #000000;
     
 }
 .registro {
@@ -69,13 +69,13 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 70px;
 }
 .productos-recomendados{
    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 70px;
 
 }
 .productos-masvendidos h1 {
@@ -96,6 +96,8 @@ main h1 {
     color: #342b1c;
     border: solid 1px #000000;
     background-color: #a9c4de;
+    padding: 3px;
+    
     
 }
 .categorias {
@@ -164,7 +166,50 @@ footer{
     margin-top: 50px;
     gap: 30px;
     padding: 15px;
+    
 }
 .integrantes {
     margin: 0px;
+}
+.mainregister {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section-register {
+    display: flex;
+    background-color: white;
+    border: black solid 1px;
+
+    width: 350px;
+    height: 300px;
+
+}
+.div-register{
+    margin: 20px;
+}
+
+.textoregistro {
+    text-align: left;
+}
+.tituloregistro {
+    margin-top: 50px;
+}
+.footerregister{ 
+    margin-top: 252px;
+}
+.botonregistrarme{
+    background-color: #a9c4de;
+    padding: 5px;
+}
+.section-login {
+    display: flex;
+    background-color: white;
+    border: black solid 1px;
+    width: 310px;
+    height: 220px;
+}
+.footerlogin {
+    margin-top: 332px;
 }
