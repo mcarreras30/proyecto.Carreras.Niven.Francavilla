@@ -29,6 +29,8 @@ margin-right: 20px;
 
 body {
     background-color: #f8f5f0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 430;
 }
 header img {
     width: 80px;
@@ -77,8 +79,18 @@ main h1 {
 .productoindividual {
     display: flex;
     flex-direction: column;
-
-
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.productoindividual h2 {
+    height: auto;
+}
+.productoindividual h3 {
+    height: auto;
+}
+.productoindividual p {
+    height: auto;
 }
 .productos-recomendados{
    display: flex;
@@ -101,13 +113,17 @@ main h1 {
     box-sizing: border-box;
 }
 .detalle {
+    display: inline-block;
     text-decoration: none;
     color: #342b1c;
     border: solid 1px #000000;
     background-color: #a9c4de;
-    padding: 3px;
-    margin-top: 20px;
-    width: 40%;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
     
 }
 .categorias {
@@ -246,5 +262,26 @@ footer{
     background-color: #6e93b8;
     color: white;
     border-radius: 25px;
-    
+}
+.noresultados {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color:rgb(57, 57, 57);
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
