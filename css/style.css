@@ -55,7 +55,7 @@ section {
 }
 .imagenes {
     width: 100%;
-    height: 230px;
+    height: 200px;
 }
 article {
     width: 15%;
@@ -169,6 +169,12 @@ main h1 {
     flex-basis: 100%;
     text-align: center;
     text-transform: uppercase;
+}
+.textoreview {
+    margin: 10px;
+}
+.nombrereview {
+    color: rgba(0, 0, 0, 0.408);
 }
 .imagen-detalle {
     margin-top: 25px;
@@ -284,4 +290,8 @@ h3 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 18px;
     font-weight: bold;
+}
+.descperfume {
+    text-align: center;
+    margin: 5px;
 }
