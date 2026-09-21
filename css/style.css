@@ -295,3 +295,95 @@ h3 {
     text-align: center;
     margin: 5px;
 }
+/* ===== 768px - Tablets ===== */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .buscador {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .buscador input {
+        width: 60%;
+    }
+    .contenido {
+        flex-wrap: wrap;
+    }
+    .catalogo {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+    article.productoindividual {
+        width: 30%;
+    }
+    .detalle-producto {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .imagen-detalle {
+        width: 80vw;
+        height: auto;
+    }
+    .reviews article {
+        width: 45%;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .registro {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .registro-individual {
+        margin: 5px 10px;
+    }
+    .buscador {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .buscador input {
+        width: 70%;
+    }
+    .catalogo {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    article.productoindividual {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .imagenes {
+        width: 100%;
+        height: auto;
+    }
+    .reviews article {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .section-register,
+    .section-login {
+        width: 90vw;
+        height: auto;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .productos-masvendidos h1,
+    .productos-recomendados h1, {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
