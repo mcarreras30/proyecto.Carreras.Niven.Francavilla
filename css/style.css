@@ -295,7 +295,7 @@ h3 {
     text-align: center;
     margin: 5px;
 }
-/* ===== 768px - Tablets ===== */
+
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
