@@ -383,7 +383,8 @@ h3 {
     }
     .productos-masvendidos h1,
     .productos-recomendados h1, {
-        width: 100%;
-        padding: 0 10px;
+         width: 100%;
+        padding: 0 10px
     }
+       
 }
