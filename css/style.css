@@ -24,9 +24,8 @@ header a {
     align-items: center;
 }
 .registro-individual {
-margin-right: 20px;
+    margin-right: 20px;
 }
-
 body {
     background-color: #f8f5f0;
     font-family: 'Lato', sans-serif;
@@ -35,17 +34,12 @@ body {
 header img {
     width: 80px;
 }
-
 .catalogo{
     margin: 20px;
     padding: 20px 60px 20px 5px;
     background-color: #a9c4de;
     border-radius: 20px;
     border: solid 2px black;
-}
-
-.navegacionhorizontal {
-    text-emphasis: none;
 }
 section {
     display: flex;
@@ -59,7 +53,6 @@ section {
 }
 article {
     width: 15%;
-    
     justify-content: space-between;
     margin: 20px;
 }
@@ -84,28 +77,29 @@ main h1 {
     justify-content: space-between;
 }
 .productoindividual h2 {
-    height: auto;
+    height: 40px;
 }
 .productoindividual h3 {
-    height: auto;
+    height: 30px;
 }
 .productoindividual p {
-    height: auto;
+    height: 100px;
 }
 .productos-recomendados{
    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
-
+   flex-wrap: wrap;
+   justify-content: flex-start;
 }
 .productos-masvendidos h1 {
     margin-top: 20px;
-    flex-basis: 100%;
+    width: 100%;
 }
-.productos-recomendados h1 {
-    flex-basis: 100%;
-    margin-top: 30px;
+.productos-recomendados h2 {
+   width: 100%;
+   margin-top: 30px;
+   text-align: center;
+   font-size: 35px;
+   font-weight: bold;
 }
 .contenido{
     display: flex;
@@ -158,7 +152,7 @@ main h1 {
     flex-wrap: wrap;
 }
 .reviews {
-    flex-basis: 100%;
+    width: 100%;
     justify-content: center;
     
 }
@@ -172,7 +166,7 @@ main h1 {
 .reviews h1 {
     margin-top: 10px;
     margin-bottom: 20px;
-    flex-basis: 100%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -194,7 +188,7 @@ main h1 {
    
 }
 .productos-categoria h1 {
-    flex-basis: 100%;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nexo</title>
     <link href="./css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +20,13 @@
       
         <div class="buscador">
                 <form action="./search-results.html" method="get">
-                <input type="text" name="search" placeholder="Buscador">
+                <input type="text" name="search" placeholder="Buscador" value="">
                 <button type="submit">🔍︎​</button>
             </form>
         </div>
         <nav class="registro" >
-        <a  href="./index.html" class="registro-individual">HOME</a>
-        <a  href="./login.html" class="registro-individual">INICIÁ SESIÓN </a>
+        <a href="./index.html" class="registro-individual">HOME</a>
+        <a href="./login.html" class="registro-individual">INICIÁ SESIÓN</a>
         <a href="./register.html" class="registro-individual">REGISTRATE</a>
         </nav>
     </header>
@@ -39,7 +40,7 @@
                 </div>
                 <div class="div-register textoregistro">
                     <label for="contraseña">Contraseña:</label>
-                    <input id="contraseña" type="password" name="contraseña" value="">
+                    <input id="contraseña" type="password" name="contraseña" value="" required>
                 </div>
                 <div class="div-register">
                     <button type="submit" class="botonregistrarme">Ingresar</button>
