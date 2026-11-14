@@ -4,6 +4,8 @@ let search = queryStringObj.get("search");
 let buscador = document.querySelector(".error-buscador");
 let formulario = document.querySelector(".buscador form");
 let texto = document.querySelector('.buscador input');
+let listaGroceries = document.querySelector('#groceries');
+let listaSmartphones = document.querySelector('#smartphones');
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
     if (texto.value == "") {
@@ -14,3 +16,49 @@ formulario.addEventListener("submit", function (e) {
         this.submit();
     }
 });
+
+fetch('https://dummyjson.com/products/category/smartphones')
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    for (let i = 0; i < 10; i++) {
+        listaSmartphones.innerHTML += `
+            <article class="producto">
+            <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
+            <h3>${data.products[i].title}</h3>
+            <p class="descripcion">${data.products[i].description}</p>
+            <p class="precio">$${data.products[i].price}</p>
+            <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a>
+            </article>`
+            ;
+            
+    }
+})
+.catch(function (error) {
+            console.log("El error es: "+ error);
+        });
+
+
+fetch('https://dummyjson.com/products/category/groceries')
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    for (let i = 0; i < 10; i++) {
+        listaGroceries.innerHTML += `
+            <article class="producto">
+            <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
+            <h3>${data.products[i].title}</h3>
+            <p class="descripcion">${data.products[i].description}</p>
+            <p class="precio">$${data.products[i].price}</p>
+            <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a>
+            </article>`
+            ;
+            
+    }
+})
+.catch(function (error) {
+            console.log("El error es: "+ error);
+        });
+
