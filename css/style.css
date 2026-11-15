@@ -120,7 +120,11 @@ main h1 {
     justify-content: center;
     
 }
-
+.detalle-reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .reviews article {
     width: 25%;
     background-color: #997c5f;

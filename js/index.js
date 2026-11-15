@@ -47,7 +47,7 @@ fetch('https://dummyjson.com/products/category/smartphones')
             <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
             <h3>${data.products[i].title}</h3>
             <p class="descripcion">${data.products[i].description}</p>
-            <p class="precio">${data.products[i].price}</p>
+            <p class="precio">$${data.products[i].price}</p>
             <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a>
             </article>`
             ;
