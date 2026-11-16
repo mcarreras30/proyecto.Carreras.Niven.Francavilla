@@ -19,14 +19,14 @@ formulario.addEventListener("submit", function (e) {
     }
 });
 
-fetch ('https://dummyjson.com/products/category-list')
+fetch ('https://dummyjson.com/products/categories')
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         let items = "";
         for (let i = 0; i < data.length; i++) {
-        items += `<li><a class="categorias" href="./category.html?category=${data[i]}">${data[i]}</a></li>`;
+        items += `<li><a class="categorias" href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
     }
     listaCategorias.innerHTML = items;
     })
@@ -41,18 +41,17 @@ fetch('https://dummyjson.com/products/category/smartphones')
     return response.json();
 })
 .then(function(data){
+    let itemsSmartphones = "";
     for (let i = 0; i < 10; i++) {
-        listaSmartphones.innerHTML += `
+            itemsSmartphones += `
             <article class="producto">
             <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
             <h3>${data.products[i].title}</h3>
             <p class="descripcion">${data.products[i].description}</p>
             <p class="precio">$${data.products[i].price}</p>
-            <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a>
-            </article>`
-            ;
-            
+            <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a> </article>`;     
     }
+        listaSmartphones.innerHTML = itemsSmartphones;
 })
 .catch(function (error) {
             console.log("El error es: "+ error);

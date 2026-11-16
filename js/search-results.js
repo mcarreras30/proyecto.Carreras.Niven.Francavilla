@@ -19,14 +19,14 @@ formulario.addEventListener("submit", function (e) {
     }
 });
 
-fetch ('https://dummyjson.com/products/category-list')
+fetch ('https://dummyjson.com/products/categories')
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         let items = "";
         for (let i = 0; i < data.length; i++) {
-        items += `<li><a class="categorias" href="./category.html?category=${data[i]}">${data[i]}</a></li>`;
+        items += `<li><a class="categorias" href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
     }
     listaCategorias.innerHTML = items;
     })
@@ -34,7 +34,7 @@ fetch ('https://dummyjson.com/products/category-list')
         console.log('El error es:' + error);
     });
 
-tituloResultados.innerText = "Resultados de la búsqueda para: " + search;
+tituloResultados.innerText = "Resultados de búsqueda para: " + search;
 
 fetch(`https://dummyjson.com/products/search?q=${search}`)
     .then(function (response) {

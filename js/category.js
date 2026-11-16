@@ -17,14 +17,14 @@ formulario.addEventListener("submit", function (e) {
     }
 });
 
-fetch ('https://dummyjson.com/products/category-list')
+fetch ('https://dummyjson.com/products/categories')
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         let items = "";
         for (let i = 0; i < data.length; i++) {
-        items += `<li><a class="categorias" href="./category.html?category=${data[i]}">${data[i]}</a></li>`;
+        items += `<li><a class="categorias" href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
     }
     listaCategorias.innerHTML = items;
     })
