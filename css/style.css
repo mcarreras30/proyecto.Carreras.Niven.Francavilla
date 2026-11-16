@@ -118,6 +118,8 @@ main h1 {
 .lista-productos {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 .reviews {
     width: 100%;

@@ -5,6 +5,8 @@ let buscador = document.querySelector(".error-buscador");
 let formulario = document.querySelector(".buscador form");
 let texto = document.querySelector('.buscador input');
 let listaCategorias = document.querySelector('.catalogo ul');
+let tituloResultados = document.querySelector('.titulohome');
+let listaResultados = document.querySelector('.lista-productos');
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -27,6 +29,34 @@ fetch ('https://dummyjson.com/products/category-list')
         items += `<li><a class="categorias" href="./category.html?category=${data[i]}">${data[i]}</a></li>`;
     }
     listaCategorias.innerHTML = items;
+    })
+    .catch(function (error) {
+        console.log('El error es:' + error);
+    });
+
+tituloResultados.innerText = "Resultados de la búsqueda para: " + search;
+
+fetch(`https://dummyjson.com/products/search?q=${search}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+       if (data.products.length == 0) {
+            listaResultados.innerText = "No hay resultados para el término: " + search;
+        } else {
+            let items = "";
+            for (let i = 0; i < data.products.length; i++) {
+                items += `
+                    <article class="producto">
+                        <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
+                        <h3>${data.products[i].title}</h3>
+                        <p class="descripcion">${data.products[i].description}</p>
+                        <p class="precio">$${data.products[i].price}</p>
+                        <a class="boton" href="./product.html?id=${data.products[i].id}">Ver detalle</a>
+                    </article>`;
+            }
+            listaResultados.innerHTML = items;
+        }
     })
     .catch(function (error) {
         console.log('El error es:' + error);
