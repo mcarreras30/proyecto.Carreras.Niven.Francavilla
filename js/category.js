@@ -31,3 +31,31 @@ fetch ('https://dummyjson.com/products/category-list')
     .catch(function (error) {
         console.log('El error es:' + error);
     });
+
+let categoria = queryStringObj.get("category");
+let tituloCategoria = document.querySelector('.productos-categoria h1');
+let listaProductos = document.querySelector('.lista-productos');
+
+tituloCategoria.innerText = categoria;
+
+fetch(`https://dummyjson.com/products/category/${categoria}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        let items = "";
+        for (let i = 0; i < data.products.length; i++) {
+            items += `
+                <article class="producto">
+                    <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
+                    <h3>${data.products[i].title}</h3>
+                    <p class="descripcion">${data.products[i].description}</p>
+                    <p class="precio">$${data.products[i].price}</p>
+                    <a class="boton" href="./product.html?id=${data.products[i].id}">Ver detalle</a>
+                </article>`;
+        }
+        listaProductos.innerHTML = items;
+    })
+    .catch(function (error) {
+        console.log('El error es:' + error);
+    });
