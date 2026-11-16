@@ -1,16 +1,15 @@
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let search = queryStringObj.get("search");
-let buscador = document.querySelector(".error-buscador");
-let formulario = document.querySelector(".buscador form");
-let texto = document.querySelector('.buscador input');
-formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-    if (texto.value == "") {
-        buscador.innerText = "El campo de búsqueda no puede estar vacío";
-    } else if (texto.value.length < 3) {
-        buscador.innerText = "El término de búsqueda debe tener al menos 3 caracteres";
-    } else {
-        this.submit();
-    }
-});
+let emailGuardado = localStorage.getItem("email");
+let linkLogin = document.querySelector(".link-login");
+let linkRegister = document.querySelector(".link-register");
+let saludo = document.querySelector(".saludo");
+let linkLogout = document.querySelector(".link-logout");
+
+if (emailGuardado == null) {
+    linkLogout.style.display = "none";
+} else {
+    saludo.innerText = "Bienvenido " + emailGuardado;
+    linkLogin.style.display = "none";
+    linkRegister.style.display = "none";
+}
+
+
