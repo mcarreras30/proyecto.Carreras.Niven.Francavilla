@@ -63,18 +63,18 @@ fetch('https://dummyjson.com/products/category/groceries')
     return response.json();
 })
 .then(function(data){
+    let itemsGroceries = "";
     for (let i = 0; i < 10; i++) {
-        listaGroceries.innerHTML += `
+            itemsGroceries += `
             <article class="producto">
             <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
             <h3>${data.products[i].title}</h3>
             <p class="descripcion">${data.products[i].description}</p>
             <p class="precio">$${data.products[i].price}</p>
             <a class="boton" href="product.html?id=${data.products[i].id}">Ver detalle</a>
-            </article>`
-            ;
-            
+            </article>`;      
     }
+    listaGroceries.innerHTML = itemsGroceries;
 })
 .catch(function (error) {
             console.log("El error es: "+ error);

@@ -67,7 +67,7 @@ fetch(`https://dummyjson.com/products/${id}`)
         for (let i = 0; i < data.reviews.length; i++) {
             itemsReviews += `
         <article class="reviewsindividual">
-            <p class="textoreview">Rating: ${data.reviews[i].rating}</p>
+            <p class="textoreview">Rating: ${data.reviews[i].rating}★</p>
             <p class="textoreview">${data.reviews[i].comment}</p>
             <p class="textoreview nombrereview">${data.reviews[i].reviewerName} - ${data.reviews[i].date}</p> 
         </article>`;
